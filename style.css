@@ -1,0 +1,163 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: white;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #111;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav button {
+  background: transparent;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+nav button:hover {
+  color: #00f2fe;
+}
+.slider-title {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.fullscreen-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 10%;
+  position: relative;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease-out;
+}
+
+.fullscreen-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.content-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 400px;
+  text-align: left;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.content-box h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.centered-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.content-box p {
+  margin-bottom: 10px;
+}
+
+.content-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+.slider-container {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 30px 40px;
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.slider-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+  height: 500px;
+}
+
+.slider-box img {
+  width: 100%;
+  border-radius: 12px;
+  transition: 0.5s ease-in-out;
+  width: 600px;
+   height: 400px;
+}
+
+.slider-btn {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.slider-btn.left {
+  left: -40px;
+}
+
+.slider-btn.right {
+  right: -40px;
+}
+
+.slider-caption {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  font-weight: 500;
+  display: none;
+}

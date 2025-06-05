@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">HOME</div>
+    <nav>
+      <button onclick="window.location.href='index.html'">Home</button>
+      <a href="fun.html"><button>Fun Facts</button></a>
+    </nav>
+  </header>
+
+  <main>
+
+<div class="fullscreen-section" style="background-image: url('./Images/The-Mali-Empire.jpg');">
+  <div class="content-box animate-on-scroll">
+    <h1 class="centered-heading">Introduction</h1>
+    <p>
+      Mali is a country in West Africa, known for its deserts, and its rich cultural history.
+      A long time ago, it was part of the Mali Empire, one of the most powerful empires in Africa.
+      In the 1300s, a famous king named Mansa Musa ruled the empire. He was known for being one of
+      the richest people ever and helped make the city of Timbuktu a place of learning and trade.
+    </p>
+    <p>
+      Later, in the late 1800s, France took control of Mali and made it part of French West Africa.
+      Mali stayed a colony until 1960, when it became an independent country. At first, it was called
+      the Sudanese Republic but soon changed its name to Mali to honor its great past.
+    </p>
+  </div>
+</div>
+
+    <div class="fullscreen-section" style="background-image: url('./Images/4k.jpg');">
+      <div class="slider-container animate-on-scroll">
+        <h2 class="slider-title">Statistics</h2>
+
+        <div class="slider-box">
+          <button class="slider-btn left" onclick="changeSlide(-1)">&#10094;</button>
+          <img id="slider-image" src='./Images/Language.png' alt="Slide" />
+          <button class="slider-btn right" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+        <div id="caption" class="slider-caption">hi</div>
+      </div>
+    </div>
+
+
+    <div class="fullscreen-section" style="background-image: url('./Images/MaliMap.png');">
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
